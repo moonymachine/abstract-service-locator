@@ -6,7 +6,7 @@ The Service Locator pattern is often considered an antipattern, to be avoided. H
 
 ### Requirements
 
-A proper, concrete `IServiceLocator` implementation that can be injected and removed from the static Locator at the appropriate time requires Unity 2018. That is because Unity 2018 is the earliest version that contains both the `[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]` attribute (added in version 5.2) and the `Application.quitting` event. Together they provide the best way to initialize and shut down a concrete `IServiceLocator`.
+A proper, concrete `IServiceLocator` implementation that can be injected and removed from the static `Locator` at the appropriate time requires Unity 2018. That is because Unity 2018 is the earliest version that contains both the `[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]` attribute (added in version 5.2) and the `Application.quitting` event. Together they provide the best way to initialize and shut down a concrete `IServiceLocator`.
 
 ### Installation
 
